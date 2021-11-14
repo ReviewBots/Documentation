@@ -115,7 +115,7 @@ const config = {
               to: '/docs/getting-started/',
             },
             {
-              label: 'Inteoduction',
+              label: 'Introduction',
               to: '/docs/api_docs/intro/',
             },
             {
