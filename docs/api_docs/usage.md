@@ -4,11 +4,6 @@ title: API Usage
 sidebar_label: Usage
 ---
 
----
-title: API Usage
-description: Common Examples of our API Usage.
----
-
 If you prefer to interact with our raw API instead of using a Third Party Module
 you can follow the usage guides and examples below which should be more then enough to 
 get you started xD
