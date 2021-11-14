@@ -15,3 +15,9 @@ variables using
 [CSS Modules](https://github.com/css-modules/css-modules).
 (We would have preferred using [styled-components](https://styled-components.com/) but docusaurus has no ssr support for
 it yet)
+
+--- 
+
+## Local Hosting
+Honestly it's a pain in the ass but if you know your way around
+Typescript it shouldn't serve as much of a challenge to you ❤️
