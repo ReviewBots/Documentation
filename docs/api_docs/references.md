@@ -1,5 +1,5 @@
 ---
-slug: intro
+slug: references
 title: API References
 sidebar_label: References
 ---
