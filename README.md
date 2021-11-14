@@ -25,6 +25,6 @@ Typescript it shouldn't serve as much of a challenge to you ❤️
 ---
 
 ## Authoring (Contributors)
-• The main Docs content can be found under `/docs`
-• The main Blog content can be found under `/blog`
+* The main Docs content can be found under `/docs`
+* The main Blog content can be found under `/blog`
 
