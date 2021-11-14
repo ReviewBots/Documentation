@@ -4,6 +4,12 @@ title: ReviewBots.js
 sidebar_label: ReviewBots.js
 ---
 
+<div align="center">
+  <p>
+    <a href="https://nodei.co/npm/infinityapi.js/"><img src="https://nodei.co/npm/reviewbots.js.png?downloads=true&stars=true" alt="npm installnfo" /></a>
+  </p>
+</div>
+
 The official NPM Module for interacting with the Review Bots API
 
 ---
@@ -49,7 +55,7 @@ client.on("message", message => {
         message.reply(`Pong ${client.ws.ping}ms`)
     }
      if(message.content == (prefix + "review")){
-        reviews.viewReview(client.user.id, function(data){
+        reviews.viewReview(client.user.id, 'SOME_USER_ID', function(data){
         let embed = new MessageEmbed()
         .setTitle(`Review by: ${data.userID}`)
         .setDescription(`${data.content}`)
