@@ -181,7 +181,7 @@ const config = {
             icons: 'emoji',
           },
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: `${customFields.githubDocsUrl}/tree/develop`,
+          editUrl: `${customFields.githubDocsUrl}`,
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
           remarkPlugins: [
