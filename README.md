@@ -1,5 +1,7 @@
 # Review Bots Docs
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d04e4180-81b3-4917-b7cc-c004495c2e5b/deploy-status)](https://app.netlify.com/sites/flamboyant-galileo-6ec390/deploys)
+
 <div align="center">
   <a href="https://docs.reviewbots.xyz">
     <img src="https://reviewbots.xyz/static/assets/imgs/rb_new.png" style="width: 125px; height: 125px;"/>
