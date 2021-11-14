@@ -11,9 +11,6 @@ Simple little cheat sheet for our API Usage
 ---
 
 ## GET User Reviews
-
-
-<Router type="GET" path="/rev/:botID/:userID" />
 • `https://api.reviewbots.xyz/rev/:botID/:userID`
 
 Fetch a specific users review from the specified bot.
