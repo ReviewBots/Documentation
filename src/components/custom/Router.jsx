@@ -57,7 +57,7 @@ const Header = styled.span`
   align-items: center;
 `;
 
-export default function HTTPHeader({ type, path }) {
+export default function Router({ type, path }) {
   const [copied, setCopy] = React.useState(false);
   React.useEffect(() => {
     if (copied) {
