@@ -4,7 +4,7 @@ title: API References
 sidebar_label: References
 ---
 
-import Router from "@../../src/components/custom/Router";
+import Router from "../../src/components/custom/Router";
 
 Simple little cheat sheet for our API Usage
 
