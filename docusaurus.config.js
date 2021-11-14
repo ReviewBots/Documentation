@@ -168,10 +168,10 @@ const config = {
       {
         docs: {
           path: 'docs',
+          sidebarPath: require.resolve("./sidebars.js"),
           admonitions: {
             icons: 'emoji',
           },
-          sidebarPath: require.resolve('./sidebars.js'),
           editUrl: `${customFields.githubDocsUrl}`,
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
