@@ -108,7 +108,7 @@ const config = {
       logo: {
         alt: "RB Logo",
         src:
-          "img/rb_new.png"
+          "https://reviewbots.xyz/static/assets/imgs/rb_new.png"
       },
       items: [
         {
