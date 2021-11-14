@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="https://docs.reviewbots.xyz">
-    <img src="https://reviewbots.xyz/static/assets/imgs/rb_new.png"/>
+    <img src="https://reviewbots.xyz/static/assets/imgs/rb_new.png" style="width: 125px; height: 125px;"/>
   </a>
 </div>
 
