@@ -64,7 +64,7 @@ export default function Router({ type, path }) {
       setTimeout(() => setCopy(false), 3000);
     }
   }, [copied]);
-  const BASE_URL = "https://api.infinitybotlist.com/";
+  const BASE_URL = "https://api.reviewbots.xyz";
   const fullUrl = new URL(path, BASE_URL).href;
   const url = path;
   return (
