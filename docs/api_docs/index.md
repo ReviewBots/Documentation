@@ -4,6 +4,8 @@ title: API Introduction
 sidebar_label: Introduction
 ---
 
+import Router from "../../src/components/custom/Router";
+
 Review Bots uses a REST API for general operations such as sending and receiving `POST` and `GET` requests.
 
 #### Base Url
@@ -13,9 +15,9 @@ Review Bots uses a REST API for general operations such as sending and receiving
 ---
 
 #### User Review URL
-• `api.reviewbots.xyz/rev/:botID/:userID`
+<Router type="GET" path="/rev/:botID/:userID" />
 
 ---
 
 #### All Reviews URL
-• `api.reviewbots.xyz/rev/:botID`
+<Router type="GET" path="/rev/:botID" />
