@@ -3,7 +3,6 @@ import styles from './styles.module.css';
 
 import 'react-toastify/dist/ReactToastify.css';
 import HeaderView from './components/HeaderView';
-import StraightforwardView from './components/StraightforwardView';
 import GiveItATryView from './components/GiveItATriyView';
 import StartCodingView from './components/StartCodingView';
 import StatsView from './components/StatsView';
@@ -15,7 +14,6 @@ const LandingPage: React.FC = () => {
     <PageLayout>
       <main className={styles.Container}>
         <HeaderView />
-        <StraightforwardView />
         <OtherFeaturesView />
         <StartCodingView />
         <StatsView />
