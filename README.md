@@ -8,7 +8,8 @@
   </a>
 </div>
 
-This website is built using
+## Useful Info
+> This website is built using
 [Docusaurus 2](https://v2.docusaurus.io/). Pages & components are written in TypeScript, the styles in vanilla CSS with
 variables using
 [CSS Modules](https://github.com/css-modules/css-modules).
