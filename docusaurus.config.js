@@ -88,11 +88,7 @@ const config = {
   ],
   customFields: { ...customFields },
   themeConfig: {
-    hideableSidebar: false,
-    algolia: {
-      apiKey: '6b7b98565bb82e16996fd185f378d618',
-      indexName: 'agile-ts',
-    },
+    hideableSidebar: true,
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: false,
@@ -121,16 +117,6 @@ const config = {
           to: "blog", 
           label: "Blog", 
           position: "right" 
-        },
-        {
-          href: "https://reviewbots.xyz/discord",
-          position: "right",
-          label: "Discord"
-        },
-        {
-          href: "https://github.com/ReviewBots",
-          position: "right",
-          label: "GitHub"
         }
       ]
     },
