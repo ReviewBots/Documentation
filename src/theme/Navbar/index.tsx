@@ -8,7 +8,6 @@
  */
 import React, { useCallback, useState } from 'react';
 import clsx from 'clsx';
-import SearchBar from '@theme/SearchBar';
 import Toggle from '@theme/Toggle';
 import useThemeContext from '@theme/hooks/useThemeContext';
 import NavbarItem from '@theme/NavbarItem';
@@ -30,7 +29,6 @@ import NavbarMobileSidebar from './components/NavbarMobileSidebar';
 const Navbar: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
   const items = useNavbarItems();
-  const [isSearchBarExpanded, setIsSearchBarExpanded] = useState(false);
   const { leftItems, rightItems } = splitNavItemsByPosition(items);
   const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
   const history = useHistory();
@@ -78,10 +76,6 @@ const Navbar: React.FC = () => {
             aria-label="Dark mode toggle"
             checked={isDarkTheme}
             onChange={onThemeToggleChange}
-          />
-          <SearchBar
-            handleSearchBarToggle={setIsSearchBarExpanded}
-            isSearchBarExpanded={isSearchBarExpanded}
           />
         </div>
         <BrowserOnly>{() => <Progressbar />}</BrowserOnly>
