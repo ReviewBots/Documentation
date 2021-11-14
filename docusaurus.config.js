@@ -24,7 +24,7 @@ const customFields = {
   copyright: `Copyright © 2020-${new Date().getFullYear()} <a target="_blank" rel="noopener noreferrer" href="https://reviewbots.xyz">Review Bots</a>`,
   meta: {
     title: 'Review Bots Docs',
-    image: '/img/rb_new.png',
+    image: 'https://reviewbots.xyz/static/assets/imgs/rb_new.png',
     description:
       'The Number One Discord Bot Review Service, Experiencing Issues with your Favourite Bots? Search our vast list of bots and Let the Dev Team know!' ,
     color: '#6c69a0',
@@ -77,7 +77,7 @@ const config = {
   baseUrlIssueBanner: false,
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  favicon: 'img/rb_new.png',
+  favicon: 'https://reviewbots.xyz/static/assets/imgs/rb_new.png',
   organizationName: 'ReviewBots',
   projectName: 'https://github.com/ReviewBots/ReviewBots-Docs',
   themes: ['@docusaurus/theme-live-codeblock'],
@@ -104,7 +104,7 @@ const config = {
       darkTheme: require('prism-react-renderer/themes/dracula'),
     },
     navbar: {
-      title: "Review Bots",
+      title: "",
       logo: {
         alt: "RB Logo",
         src:
