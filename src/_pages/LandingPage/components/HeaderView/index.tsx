@@ -18,8 +18,6 @@ const HeaderView: React.FC = () => {
       'simple',
       'straightforward',
       'understandable',
-      'boilerplate free',
-      'flexible',
       'fun',
     ])
   );
@@ -30,7 +28,7 @@ const HeaderView: React.FC = () => {
       style={{ height: windowHeight > 800 ? windowHeight : undefined }}>
       <div>
         <h1 className={styles.HeaderTitle}>
-          State Management <span className={styles.SeparatorText}>made</span>
+          Discord Bot Reviews <span className={styles.SeparatorText}>made</span>
         </h1>
         <Spacer height={20} />
         <HeaderTyper
