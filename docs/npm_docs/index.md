@@ -23,12 +23,6 @@ or
 
 ---
 
-## API Usage
-- View our [Docs](https://docs.reviewbots.xyz) for help and Usage
-- https://docs.reviewbots.xyz
-
----
-
 ## GET Review Info
 
 ### Constructor
