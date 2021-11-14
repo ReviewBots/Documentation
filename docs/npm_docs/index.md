@@ -6,7 +6,7 @@ sidebar_label: ReviewBots.js
 
 <div align="center">
   <p>
-    <a href="https://nodei.co/npm/infinityapi.js/"><img src="https://nodei.co/npm/reviewbots.js.png?downloads=true&stars=true" alt="npm installnfo" /></a>
+    <a href="https://nodei.co/npm/reviewbots.js/"><img src="https://nodei.co/npm/reviewbots.js.png?downloads=true&stars=true" alt="npm installnfo" /></a>
   </p>
 </div>
 
