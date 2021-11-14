@@ -107,10 +107,26 @@ const config = {
       },
       items: [
         {
-          to: "docs/getting-started",
-          activeBasePath: "docs/getting-started",
           label: "API Docs",
-          position: "left"
+          position: "left",
+          items: [
+            {
+              label: 'Getting Started',
+              to: '/docs/getting-started/',
+            },
+            {
+              label: 'Inteoduction',
+              to: '/docs/api_docs/intro/',
+            },
+            {
+              label: 'References',
+              to: '/docs/api_docs/references/',
+            },
+            {
+              label: 'Usage',
+              to: '/docs/api_docs/usage/',
+            },
+          ],
         },
                 {
           to: "/docs/npm_docs/rbmodule",
