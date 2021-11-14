@@ -20,7 +20,7 @@ Fetch a specific users review from the specified bot.
 | --------- | ----------- | --------------------------------------------------------------------------------------------------- |
 | userID    | `String`    | Discord Client ID for the Fetched User.                                                                 |
 | botID     | `String`    | Discord ID for the Fetched User.                                                                    |
-| content   | `Boolean`   | Message/Content for the Review.                                                                     |
+| content   | `String`    | Message/Content for the Review.                                                                     |
 | likes     | `Array`     | Array of Users who liked the Review.                                                                   |
 | dislikes  | `Array`     | Areay of Users who Dislike the Review.                                                        |
 | rating    | `Number`    | Rating for the Review (1 - 5 Stars).                                                        |
