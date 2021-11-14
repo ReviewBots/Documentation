@@ -1,6 +1,6 @@
 {
-  "name": "agile-docs",
-  "version": "0.0.9",
+  "name": "review-bots-docs",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
