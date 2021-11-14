@@ -31,13 +31,13 @@ const Footer: React.FC = () => {
             <div className={styles.BrandContainer}>
               <img
                 className={styles.BrandImage}
-                alt="AgileTs Logo"
+                alt="RB Logo"
                 height={35}
                 width={35}
-                src="/img/logo.svg"
+                src="https://reviewbots.xyz/static/assets/imgs/rb_new.png"
                 title={siteConfig.tagline}
               />
-              <div className={styles.BrandText}>AgileTs</div>
+              <div className={styles.BrandText}>Review Bots</div>
             </div>
             <div className={styles.Tagline}>{siteConfig.tagline}</div>
             <GithubButton
