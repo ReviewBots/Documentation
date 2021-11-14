@@ -132,7 +132,17 @@ const config = {
           to: "/docs/npm_docs/rbmodule",
           activeBasePath: "/docs/npm_docs/rbmodule",
           label: "NPM Docs",
-          position: "left"
+          position: "left",
+          items: [
+            {
+              label: 'Introduction',
+              to: '/docs/npm_docs/intro/',
+            },
+            {
+              label: 'ReviewBots.js',
+              to: '/docs/npm_docs/rbmodule/',
+            },
+          ],
         },
         { 
           to: "blog", 
