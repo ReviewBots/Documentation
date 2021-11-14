@@ -113,6 +113,12 @@ const config = {
           label: "API Docs",
           position: "left"
         },
+                {
+          to: "/docs/npm_docs/rbmodule",
+          activeBasePath: "/docs/npm_docs/rbmodule",
+          label: "NPM Docs",
+          position: "left"
+        },
         { 
           to: "blog", 
           label: "Blog", 
