@@ -1,0 +1,39 @@
+---
+id: input
+title: Input
+sidebar_label: Input
+---
+
+import Playground from './Playground'
+import { Input } from 'tigerspack';
+
+
+## Default Input
+
+<Playground>
+    <Input placeholder='Name' />
+</Playground>
+
+```jsx
+<Input placeholder='Name' />
+```
+
+## Error Input
+
+<Playground>
+    <Input error placeholder='Email' value='test@test' />
+</Playground>
+
+```jsx
+<Input error placeholder='Email' value='test@test' />
+```
+
+## Valid Input
+
+<Playground>
+    <Input valid placeholder='Email' value='test@test.test' />
+</Playground>
+
+```jsx
+<Input valid placeholder='Email' value='test@test.test' />
+```
