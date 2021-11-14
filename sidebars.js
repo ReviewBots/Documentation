@@ -14,7 +14,7 @@ module.exports = {
            type: "category",
            label: "NPM Modules",
            items: [
-            "npm_docs/index",
+            "npm_docs/rbmodule",
         ],
       },
    ],
