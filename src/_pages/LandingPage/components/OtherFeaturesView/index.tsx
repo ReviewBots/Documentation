@@ -4,39 +4,18 @@ import Cards, { CardInterface } from './components/Cards';
 
 const cards: CardInterface[] = [
   {
-    title: 'Centralize',
+    title: 'Add/Find a Bot',
     description:
-      'AgileTs allows you to easily manage all of your application logic and states outside of the UI-Components in a central place.',
-    to: 'docs/introduction#centralize',
-    imagePath: 'img/pages/landing/software_engineer.svg',
+      'Search for your Favourite Bots. If you cant find it or just want to add your own Bot you can do that to!',
+    to: 'https://reviewbots.xyz/add',
+    imagePath: 'https://reviewbots.xyz/static/assets/imgs/Home_Plus.png',
   },
   {
-    title: 'Flexible',
+    title: 'Leave a Review',
     description:
-      'AgileTs works with nearly any UI-Layer and isn’t bound to any specific workflow. Use it the way it suits you best.',
-    to: 'docs/introduction#flexible',
-    imagePath: 'img/pages/landing/teaching.svg',
-  },
-  {
-    title: 'Easy to Use',
-    description:
-      'Learn the powerful tools of AgileTs in a short amount of time.',
-    to: 'docs/introduction#easy-to-use',
-    imagePath: 'img/pages/landing/science.svg',
-  },
-  {
-    title: 'Well Tested',
-    description:
-      'AgileTs has over 600 jest tests to ensure everything works as expected.',
-    to: 'https://coveralls.io/github/agile-ts/agile?branch=master',
-    imagePath: 'img/pages/landing/engineer.svg',
-  },
-  {
-    title: 'Typescript',
-    description:
-      'AgileTs is almost 100% typesafe and provides type inference for any complex structure.',
-    to: 'docs/introduction#typescript',
-    imagePath: 'img/pages/landing/typescript.svg',
+      'Experiencing Issues with your Favourite Bots? Search our vast list of bots and Let us and the Dev(s) know!',
+    to: 'https://reviewbots.xyz/bots',
+    imagePath: 'https://reviewbots.xyz/static/assets/imgs/comments--v1.png',
   },
 ];
 
