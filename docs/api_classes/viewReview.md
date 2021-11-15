@@ -39,7 +39,7 @@ RB()
 | Field     | Type        | Description                                                                                         |
 | --------- | ----------- | --------------------------------------------------------------------------------------------------- |
 | botID     | `String`    | Discord Client ID for the Bot to Fetch.                                                             |
-| botID     | `String`    | Discord User ID for the User to Fetch.                                                              |
+| userID    | `String`   | Discord User ID for the User to Fetch.                                                               |
 
 
 ---
