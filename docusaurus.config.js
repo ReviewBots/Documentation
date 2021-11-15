@@ -126,19 +126,20 @@ const config = {
               label: 'Usage',
               to: '/docs/api_docs/usage/',
             },
+          ],
+        },
+        {
+          label: "API Classes",
+          position: "left",
+          items: [
             {
-              label: 'Classes',
-              items: [
-                {
-                  label: 'getBotReviews()',
-                  to: '/docs/api_classes/get'
-                },
-                {
-                  label: 'viewReview()',
-                  to: '/docs/api_classes/view'
-                },
-              ],
-            }
+              label: 'Introduction',
+              to: '/docs/npm_docs/intro/',
+            },
+            {
+              label: 'ReviewBots.js',
+              to: '/docs/npm_docs/rbmodule/',
+            },
           ],
         },
         {
