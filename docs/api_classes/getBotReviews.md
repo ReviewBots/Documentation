@@ -4,7 +4,7 @@ title: getBotReviews()
 sidebar_label: getBotReviews()
 ---
 
-This Class is used to Get a list of All Reviews for the Specified Bot.
+Used to Display a list of All Reviews for the Specified Bot.
 
 ---
 
@@ -27,5 +27,28 @@ RB()
 ```
 
 ---
+
+## Paramaters
+###### Flags 
+| Field     | Type        | Description                                                                                         |
+| --------- | ----------- | --------------------------------------------------------------------------------------------------- |
+| botID     | `String`    | Discord Client ID for the Bot to Fetch.                                                             |
+
+
+---
+
+## Examples
+
+#### JavaScript Usage
+
+```js:title=node-fetch
+const fetch = require("node-fetch")
+fetch(`https://api.reviewbots.xyz/rev/bot-id-here`, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }).then(async res => console.log(await res.json()));
+```
 
 
