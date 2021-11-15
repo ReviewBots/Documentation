@@ -126,6 +126,19 @@ const config = {
               label: 'Usage',
               to: '/docs/api_docs/usage/',
             },
+            {
+              label: 'Classes',
+              items: [
+                {
+                  label: 'getBotReviews()',
+                  to: '/docs/api_classes/get'
+                },
+                {
+                  label: 'viewReview()',
+                  to: '/docs/api_classes/view'
+                },
+              ],
+            }
           ],
         },
         {
