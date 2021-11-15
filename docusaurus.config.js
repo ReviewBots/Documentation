@@ -133,12 +133,12 @@ const config = {
           position: "left",
           items: [
             {
-              label: 'Introduction',
-              to: '/docs/npm_docs/intro/',
+              label: 'getBotReviews()',
+              to: '/docs/api_classes/get/',
             },
             {
-              label: 'ReviewBots.js',
-              to: '/docs/npm_docs/rbmodule/',
+              label: 'viewReview()',
+              to: '/docs/api_classes/view/',
             },
           ],
         },
