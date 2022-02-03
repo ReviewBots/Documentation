@@ -6,19 +6,17 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import React, { useState } from 'react';
-import clsx from 'clsx';
-import useUserPreferencesContext from '@theme/hooks/useUserPreferencesContext';
-import { translate } from '@docusaurus/Translate';
-import styles from './styles.module.css';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import { useInterval } from '../../hooks/useInterval';
+import React, { useState } from "react";
+import clsx from "clsx";
+import useUserPreferencesContext from "@theme/hooks/useUserPreferencesContext";
+import { translate } from "@docusaurus/Translate";
+import styles from "./styles.module.css";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import { useInterval } from "../../hooks/useInterval";
 
 const AnnouncementBar: React.FC = () => {
-  const {
-    isAnnouncementBarClosed,
-    closeAnnouncementBar,
-  } = useUserPreferencesContext();
+  const { isAnnouncementBarClosed, closeAnnouncementBar } =
+    useUserPreferencesContext();
   const { siteConfig } = useDocusaurusContext();
   const { announcementBar } = siteConfig.customFields;
 
@@ -74,9 +72,10 @@ const AnnouncementBar: React.FC = () => {
           onClick={closeAnnouncementBar}
           aria-label={translate({
             id: id,
-            message: 'Close',
-            description: 'The ARIA label for close button of announcement bar',
-          })}>
+            message: "Close",
+            description: "The ARIA label for close button of announcement bar",
+          })}
+        >
           <span aria-hidden="true">×</span>
         </button>
       ) : null}

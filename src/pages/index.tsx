@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
-import LandingPage from '../_pages/LandingPage';
-import core from '../core';
+import LandingPage from "../_pages/LandingPage";
+import core from "../core";
 
 const Home = () => {
   useEffect(() => {

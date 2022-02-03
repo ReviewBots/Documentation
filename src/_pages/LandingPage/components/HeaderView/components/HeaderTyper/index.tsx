@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { AutoTyper } from './AutoTyper';
-import styles from './styles.module.css';
-import clsx from 'clsx';
+import React, { useEffect, useState } from "react";
+import { AutoTyper } from "./AutoTyper";
+import styles from "./styles.module.css";
+import clsx from "clsx";
 
 export type Props = {
   words?: string[];
@@ -14,8 +14,8 @@ export type Props = {
 const HeaderTyper: React.FC<Props> = (props) => {
   const { className } = props;
   const delay = props.delay || 500;
-  const words = props.words || ['nothing to type', 'are you sure', 'really?'];
-  const defaultText = props.defaultText || 'nothing displayed';
+  const words = props.words || ["nothing to type", "are you sure", "really?"];
+  const defaultText = props.defaultText || "nothing displayed";
   const typeSpeed = props.typeSpeed || 100;
 
   const [text, setText] = useState(defaultText);

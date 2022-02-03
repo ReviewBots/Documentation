@@ -1,18 +1,18 @@
 // Created this Layout to have a Custom Head on the LandingPage
 
-import React, { ComponentProps } from 'react';
-import LayoutProviders from '@theme/LayoutProviders';
-import { ToastContainer } from 'react-toastify';
-import Head from '@docusaurus/Head';
-import AnnouncementBar from '@theme/AnnouncementBar';
-import Navbar from '@theme/Navbar';
-import Footer from '@theme/Footer';
-import clsx from 'clsx';
-import styles from './styles.module.css';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import Layout from '@theme/Layout';
-import { defineConfig, normalizeArray } from '@agile-ts/utils';
+import React, { ComponentProps } from "react";
+import LayoutProviders from "@theme/LayoutProviders";
+import { ToastContainer } from "react-toastify";
+import Head from "@docusaurus/Head";
+import AnnouncementBar from "@theme/AnnouncementBar";
+import Navbar from "@theme/Navbar";
+import Footer from "@theme/Footer";
+import clsx from "clsx";
+import styles from "./styles.module.css";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import Layout from "@theme/Layout";
+import { defineConfig, normalizeArray } from "@agile-ts/utils";
 
 type Props = {
   canonical?: string;
@@ -47,7 +47,7 @@ const PageLayout: React.FC<Props> = (props) => {
     defaultMetaConfig,
     true
   ) as any;
-  const canonical = props.canonical || ''; // https://de.ryte.com/wiki/Canonical_Tag
+  const canonical = props.canonical || ""; // https://de.ryte.com/wiki/Canonical_Tag
   const finalTitle = `${siteTitle} - ${meta.title}`;
   const metaImageUrl = useBaseUrl(meta.image, { absolute: true });
   const metaFaviconUrl = useBaseUrl(favicon);
@@ -55,11 +55,11 @@ const PageLayout: React.FC<Props> = (props) => {
   return (
     <LayoutProviders>
       <Head>
-        <meta name={'environment'} content={'production'} />
+        <meta name={"environment"} content={"production"} />
 
         {/* Name */}
-        <meta name={'site_name'} content={siteTitle} />
-        <meta name={'application-name'} content={siteTitle} />
+        <meta name={"site_name"} content={siteTitle} />
+        <meta name={"application-name"} content={siteTitle} />
 
         {/* Title */}
         {finalTitle && <title>{finalTitle}</title>}
@@ -68,7 +68,7 @@ const PageLayout: React.FC<Props> = (props) => {
 
         {/* Keywords */}
         {meta.keywords.length > 0 && (
-          <meta name="keywords" content={meta.keywords.join(',')} />
+          <meta name="keywords" content={meta.keywords.join(",")} />
         )}
 
         {/* Color */}
@@ -83,7 +83,7 @@ const PageLayout: React.FC<Props> = (props) => {
           property="og:url"
           content={`${siteUrl}${permalink || canonical}/`}
         />
-        <meta property={'forem:domain'} content={'agile-ts.org'} />
+        <meta property={"forem:domain"} content={"agile-ts.org"} />
 
         {/* Description */}
         {meta.description && (
@@ -111,10 +111,10 @@ const PageLayout: React.FC<Props> = (props) => {
         <meta name="twitter:card" content="summary_large_image" />
 
         {/* Creator */}
-        <meta name={'twitter:creator'} content={'@agiletypescript'} />
+        <meta name={"twitter:creator"} content={"@agiletypescript"} />
 
         <noscript>This site runs best with JavaScript enabled</noscript>
-        <link rel={'sitemap'} type={'application/xml'} href={'/sitemap.xml'} />
+        <link rel={"sitemap"} type={"application/xml"} href={"/sitemap.xml"} />
       </Head>
 
       <ToastContainer />

@@ -6,12 +6,12 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import React from 'react';
-import clsx from 'clsx';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import styles from './styles.module.css';
-import GithubButton from '../../components/buttons/GithubButton';
-import FooterLink from './components/FooterLink';
+import React from "react";
+import clsx from "clsx";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import styles from "./styles.module.css";
+import GithubButton from "../../components/buttons/GithubButton";
+import FooterLink from "./components/FooterLink";
 
 const Footer: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
   }
 
   return (
-    <footer className={clsx('footer', styles.Container)}>
+    <footer className={clsx("footer", styles.Container)}>
       <div className={styles.InnerContainer}>
         <div className={styles.ContentContainer}>
           {/*Footer Left */}
@@ -56,7 +56,8 @@ const Footer: React.FC = () => {
                 {linkItem.items?.map((item) => (
                   <ul
                     className={styles.LinkItemContainer}
-                    key={item.href ?? item.to}>
+                    key={item.href ?? item.to}
+                  >
                     <FooterLink {...item} />
                   </ul>
                 ))}

@@ -1,7 +1,7 @@
-import React from 'react';
-import styles from './styles.module.css';
-import LiveCoder from './components/LiveCoder';
-import Spacer from '../../../../components/other/Spacer';
+import React from "react";
+import styles from "./styles.module.css";
+import LiveCoder from "./components/LiveCoder";
+import Spacer from "../../../../components/other/Spacer";
 
 const reactCode = `// 1️⃣ Create State with the initial value "Hello World"
 const MY_FIRST_STATE = createState("Hello World");

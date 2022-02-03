@@ -1,5 +1,5 @@
-import api from '../../api';
-import { GetGithubStatsInterface } from './stats.interface';
+import api from "../../api";
+import { GetGithubStatsInterface } from "./stats.interface";
 
 export const GET_GITHUB_STATS = async (): Promise<GetGithubStatsInterface> => {
   const response = await api

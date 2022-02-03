@@ -1,9 +1,9 @@
-import { LogCodeManager } from '@agile-ts/core';
-import { Event } from './events/Event';
-import { RemoveEvent, RemoveEventConfigInterface } from './events/RemoveEvent';
-import { TypeEvent, TypeEventConfigInterface } from './events/TypeEvent';
-import { SleepEvent, SleepEventConfigInterface } from './events/SleepEvent';
-import { LoopEvent, LoopEventConfigInterface } from './events/LoopEvent';
+import { LogCodeManager } from "@agile-ts/core";
+import { Event } from "./events/Event";
+import { RemoveEvent, RemoveEventConfigInterface } from "./events/RemoveEvent";
+import { TypeEvent, TypeEventConfigInterface } from "./events/TypeEvent";
+import { SleepEvent, SleepEventConfigInterface } from "./events/SleepEvent";
+import { LoopEvent, LoopEventConfigInterface } from "./events/LoopEvent";
 
 export class AutoTyper {
   public activeTimeout?: NodeJS.Timeout | number;
@@ -23,7 +23,7 @@ export class AutoTyper {
 
   constructor(config: CreateAutoTyperConfigInterface = {}) {
     config = {
-      initialText: '',
+      initialText: "",
       delay: 200,
       textListener: () => {
         /* empty function */
@@ -82,7 +82,7 @@ export class AutoTyper {
 
   public async executeEvent(event: Event) {
     if (this.activeInterval) {
-      LogCodeManager.getLogger()?.warn('One Event is still acitve');
+      LogCodeManager.getLogger()?.warn("One Event is still acitve");
       return;
     }
 

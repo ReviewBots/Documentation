@@ -1,9 +1,9 @@
-import React, { useCallback, useState } from 'react';
-import Card from './components/Card';
-import styles from './styles.module.css';
-import BulletItem from './components/BulletItem';
-import { useWindowSize } from '../../../../../../hooks/useWindowSize';
-import { useSwipeable } from 'react-swipeable';
+import React, { useCallback, useState } from "react";
+import Card from "./components/Card";
+import styles from "./styles.module.css";
+import BulletItem from "./components/BulletItem";
+import { useWindowSize } from "../../../../../../hooks/useWindowSize";
+import { useSwipeable } from "react-swipeable";
 
 export interface CardInterface {
   title: string;
@@ -120,9 +120,10 @@ const Cards: React.FC<Props> = (props) => {
           height: cardDimensions.height,
           width:
             windowWidth * 0.95 > cardDimensions.width
-              ? cardDimensions.width || '100%'
-              : '100%',
-        }}>
+              ? cardDimensions.width || "100%"
+              : "100%",
+        }}
+      >
         {cards.map((card, i) => {
           const cardProps = getCardProps(i);
           return (
@@ -133,18 +134,19 @@ const Cards: React.FC<Props> = (props) => {
                 transform: `translateX(${cardProps.translateX}px) scale(${cardProps.scale})`,
                 opacity: cardProps.opacity,
                 zIndex: cardProps.zIndex,
-                cursor: i === index ? 'auto' : 'pointer',
+                cursor: i === index ? "auto" : "pointer",
               }}
               onClick={() => {
                 setIndex(i);
-              }}>
+              }}
+            >
               <Card
                 data={card}
                 active={i === index}
                 width={
                   windowWidth * 0.95 > cardDimensions.width
-                    ? cardDimensions.width || '100%'
-                    : '100%'
+                    ? cardDimensions.width || "100%"
+                    : "100%"
                 }
                 height={cardDimensions.height}
               />

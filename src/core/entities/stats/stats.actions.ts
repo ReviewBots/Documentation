@@ -1,6 +1,6 @@
-import { GET_GITHUB_STATS, GET_NPM_DOWNLOADS_IN_RANGE } from './stats.routes';
-import { GITHUB_FORKS, GITHUB_STARS, NPM_DOWNLOADS } from './stats.controller';
-import { GetGithubStatsInterface } from './stats.interface';
+import { GET_GITHUB_STATS, GET_NPM_DOWNLOADS_IN_RANGE } from "./stats.routes";
+import { GITHUB_FORKS, GITHUB_STARS, NPM_DOWNLOADS } from "./stats.controller";
+import { GetGithubStatsInterface } from "./stats.interface";
 
 const nextMonth = (date: Date) => {
   date.setMonth(date.getMonth() + 1);
@@ -30,7 +30,7 @@ export const getGithubStats = async (): Promise<GetGithubStatsInterface> => {
 };
 
 export const getNPMDownloads = async (
-  from: Date = new Date('2020-08-24'),
+  from: Date = new Date("2020-08-24"),
   to: Date = new Date()
 ): Promise<number> => {
   const dates = getDateMonthRanges(from, to);

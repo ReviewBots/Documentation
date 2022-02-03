@@ -1,15 +1,15 @@
-import { useHistoryPopHandler, useThemeConfig } from '@docusaurus/theme-common';
-import useWindowSize from '@theme/hooks/useWindowSize';
-import { useCallback, useEffect, useState } from 'react';
+import { useHistoryPopHandler, useThemeConfig } from "@docusaurus/theme-common";
+import useWindowSize from "@theme/hooks/useWindowSize";
+import { useCallback, useEffect, useState } from "react";
 
-export const DefaultNavItemPosition = 'right'; // If split links by left/right
+export const DefaultNavItemPosition = "right"; // If split links by left/right
 
 export const splitNavItemsByPosition = (items) => {
   const leftItems = items.filter(
-    (item) => (item.position ?? DefaultNavItemPosition) === 'left'
+    (item) => (item.position ?? DefaultNavItemPosition) === "left"
   );
   const rightItems = items.filter(
-    (item) => (item.position ?? DefaultNavItemPosition) === 'right'
+    (item) => (item.position ?? DefaultNavItemPosition) === "right"
   );
   return {
     leftItems,
@@ -26,7 +26,7 @@ export const useMobileSidebar = () => {
   const windowSize = useWindowSize();
 
   // Mobile sidebar not visible on hydration: can avoid SSR rendering
-  const shouldRender = windowSize === 'mobile'; // || windowSize === 'ssr';
+  const shouldRender = windowSize === "mobile"; // || windowSize === 'ssr';
 
   const [shown, setShown] = useState(false);
 
@@ -47,7 +47,7 @@ export const useMobileSidebar = () => {
   }, []);
 
   useEffect(() => {
-    if (windowSize === 'desktop') {
+    if (windowSize === "desktop") {
       setShown(false);
     }
   }, [windowSize]);

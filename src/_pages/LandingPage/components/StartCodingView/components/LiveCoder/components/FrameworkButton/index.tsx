@@ -1,7 +1,7 @@
-import React from 'react';
-import styles from './styles.module.css';
-import { IconContext } from 'react-icons';
-import clsx from 'clsx';
+import React from "react";
+import styles from "./styles.module.css";
+import { IconContext } from "react-icons";
+import clsx from "clsx";
 
 export type FrameworkButtonProps = {
   logo: React.ComponentElement<any, any>;
@@ -23,20 +23,23 @@ const FrameworkButton: React.FC<FrameworkButtonProps> = (props) => {
   return (
     <div
       className={clsx(styles.Container, { [styles.Container_Active]: active })}
-      style={{ cursor: selectable ? 'pointer' : 'default' }}
-      onClick={selectable ? onClick : undefined}>
+      style={{ cursor: selectable ? "pointer" : "default" }}
+      onClick={selectable ? onClick : undefined}
+    >
       {!active && <div className={styles.LogoContainerOverlay} />}
       <div
         className={styles.LogoContainer}
-        style={{ border: `2px solid ${color}` }}>
-        <IconContext.Provider value={{ color: color, size: '1.5rem' }}>
+        style={{ border: `2px solid ${color}` }}
+      >
+        <IconContext.Provider value={{ color: color, size: "1.5rem" }}>
           {logo}
         </IconContext.Provider>
       </div>
       {!selectable && notSelectableToolTip && (
         <span
           className={styles.TooltipText}
-          style={{ border: `1px solid ${color}` }}>
+          style={{ border: `1px solid ${color}` }}
+        >
           {notSelectableToolTip}
         </span>
       )}

@@ -7,8 +7,8 @@ import {
   FiStar,
   FiUsers,
   FiZap,
-} from 'react-icons/fi';
-import React from 'react';
+} from "react-icons/fi";
+import React from "react";
 
 export const iconKeyMap = {
   star: (props) => <FiStar {...props} />,

@@ -1,10 +1,10 @@
-import React from 'react';
-import styles from './styles.module.css';
-import Spacer from '../../../../components/other/Spacer';
+import React from "react";
+import styles from "./styles.module.css";
+import Spacer from "../../../../components/other/Spacer";
 import SectionScroller, {
   SectionInterface,
-} from './components/SectionScroller';
-import PlainButton from '../../../../components/buttons/PlainButton';
+} from "./components/SectionScroller";
+import PlainButton from "../../../../components/buttons/PlainButton";
 
 const sections: SectionInterface[] = [
   {
@@ -17,9 +17,9 @@ MY_STATE.set("Frank"); // Update State value
 const MY_STATE = createState("Jeff"); // <-
 MY_STATE.set("Frank"); // Update State value
     `,
-    title: 'Create State',
-    description: 'Instantiate a global State with a single line of code.',
-    icon: 'zap',
+    title: "Create State",
+    description: "Instantiate a global State with a single line of code.",
+    icon: "zap",
   },
   {
     code: `
@@ -30,9 +30,9 @@ const myState = useAgile(MY_STATE);
 // Dynamically bind State to UI-Components for reactivity
 const myState = useAgile(MY_STATE);
     `,
-    title: 'Subscribe UI-Component',
-    description: 'Dynamically bind State to UI-Components for reactivity.',
-    icon: 'repeat',
+    title: "Subscribe UI-Component",
+    description: "Dynamically bind State to UI-Components for reactivity.",
+    icon: "repeat",
   },
   {
     code: `
@@ -42,9 +42,9 @@ MY_STATE.persist();
 // Permanently store State in the appropriate local Storage
 MY_STATE.persist();
     `,
-    title: 'Persist State',
-    description: 'Permanently store State in the appropriate local Storage.',
-    icon: 'server',
+    title: "Persist State",
+    description: "Permanently store State in the appropriate local Storage.",
+    icon: "server",
   },
   {
     code: `
@@ -56,9 +56,9 @@ USERS.collect({id: 1, name: "Jeff"}, ['teamA']);
 const USERS = createCollection(); // <-
 USERS.collect({id: 1, name: "Jeff"}, ['teamA']);
     `,
-    title: 'Collection',
-    description: 'Easily create a dynamic and reactive set of States.',
-    icon: 'users',
+    title: "Collection",
+    description: "Easily create a dynamic and reactive set of States.",
+    icon: "users",
   },
   {
     code: `
@@ -72,9 +72,9 @@ const IS_AUTH = createComputed(() => {
    return AUTH_TOKEN.exists && EXPIRATION_TIME.value > 0;
 });
     `,
-    title: 'Computed State',
-    description: 'Compute State depending on other States.',
-    icon: 'edit',
+    title: "Computed State",
+    description: "Compute State depending on other States.",
+    icon: "edit",
   },
 ];
 
@@ -94,8 +94,8 @@ const StraightforwardView: React.FC = () => {
         <Spacer height={60} />
         <SectionScroller sections={sections} startIndex={0} />
         <PlainButton
-          to={'docs/introduction'}
-          name={'Learn more'}
+          to={"docs/introduction"}
+          name={"Learn more"}
           className={styles.LearnMoreButton}
         />
       </div>

@@ -1,11 +1,11 @@
-import React from 'react';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useLockBodyScroll from '@theme/hooks/useLockBodyScroll';
-import clsx from 'clsx';
-import styles from '../../styles.module.css';
-import QuickSocialLinksView from '../QuickSocialLinksView';
-import NavbarItem from '@theme/NavbarItem';
-import { useNavbarItems } from '../../controller';
+import React from "react";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import useLockBodyScroll from "@theme/hooks/useLockBodyScroll";
+import clsx from "clsx";
+import styles from "../../styles.module.css";
+import QuickSocialLinksView from "../QuickSocialLinksView";
+import NavbarItem from "@theme/NavbarItem";
+import { useNavbarItems } from "../../controller";
 
 type Props = {
   toggleSidebar: () => void;
@@ -22,8 +22,9 @@ const NavbarMobileSidebar: React.FC<Props> = (props) => {
     <div className="navbar-sidebar">
       <div className="navbar-sidebar__brand">
         <a
-          className={clsx('navbar__brand', styles.BrandText)}
-          onClick={toggleSidebar}>
+          className={clsx("navbar__brand", styles.BrandText)}
+          onClick={toggleSidebar}
+        >
           {siteConfig.title}
         </a>
         <QuickSocialLinksView />

@@ -1,10 +1,10 @@
-import React from 'react';
-import styles from './styles.module.css';
+import React from "react";
+import styles from "./styles.module.css";
 
-import 'react-toastify/dist/ReactToastify.css';
-import HeaderView from './components/HeaderView';
-import PageLayout from '../../components/layout/PageLayout';
-import OtherFeaturesView from './components/OtherFeaturesView';
+import "react-toastify/dist/ReactToastify.css";
+import HeaderView from "./components/HeaderView";
+import PageLayout from "../../components/layout/PageLayout";
+import OtherFeaturesView from "./components/OtherFeaturesView";
 
 const LandingPage: React.FC = () => {
   return (

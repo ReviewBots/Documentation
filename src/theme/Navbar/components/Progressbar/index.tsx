@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import styles from './styles.module.css';
-import { useScroll } from '../../../../hooks/useScroll';
+import React, { useState } from "react";
+import styles from "./styles.module.css";
+import { useScroll } from "../../../../hooks/useScroll";
 
 export type Props = {};
 
 const Progressbar: React.FC<Props> = (props) => {
-  const [scrollbarId] = useState('scrollbar2000');
+  const [scrollbarId] = useState("scrollbar2000");
   useScroll(scrollbarId);
 
   return (

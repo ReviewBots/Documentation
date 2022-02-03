@@ -1,8 +1,8 @@
-import React from 'react';
-import { CardInterface } from '../../index';
-import styles from './styles.module.css';
-import PlainButton from '../../../../../../../../components/buttons/PlainButton';
-import clsx from 'clsx';
+import React from "react";
+import { CardInterface } from "../../index";
+import styles from "./styles.module.css";
+import PlainButton from "../../../../../../../../components/buttons/PlainButton";
+import clsx from "clsx";
 
 type Props = {
   data: CardInterface;
@@ -20,7 +20,8 @@ const Card: React.FC<Props> = (props) => {
       className={clsx(styles.Container, className, {
         [styles.Container_Active]: active,
       })}
-      style={{ maxWidth: width, height }}>
+      style={{ maxWidth: width, height }}
+    >
       <div className={styles.ContentContainer}>
         <img
           alt={data.imagePath}
@@ -35,7 +36,7 @@ const Card: React.FC<Props> = (props) => {
       <PlainButton
         className={styles.MoreButton}
         to={data.to}
-        name={'Learn more'}
+        name={"Learn more"}
       />
     </div>
   );

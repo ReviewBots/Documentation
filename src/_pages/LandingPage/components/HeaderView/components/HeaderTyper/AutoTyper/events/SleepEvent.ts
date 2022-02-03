@@ -1,11 +1,11 @@
-import { AutoTyper } from '../index';
-import { Event } from './Event';
+import { AutoTyper } from "../index";
+import { Event } from "./Event";
 
 export class SleepEvent extends Event {
   public config: SleepEventConfigInterface;
 
   constructor(autoTyper: AutoTyper, config: SleepEventConfigInterface = {}) {
-    super(autoTyper, false, 'sleep');
+    super(autoTyper, false, "sleep");
     config = {
       ms: 2000,
       ...config,

@@ -1,11 +1,11 @@
-import React from 'react';
-import styles from './styles.module.css';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Spacer from '../../../../components/other/Spacer';
-import { useAgile } from '@agile-ts/react';
-import core from '../../../../core';
-import StatBadge from './components/StatBadge';
-import { useWindowSize } from '../../../../hooks/useWindowSize';
+import React from "react";
+import styles from "./styles.module.css";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Spacer from "../../../../components/other/Spacer";
+import { useAgile } from "@agile-ts/react";
+import core from "../../../../core";
+import StatBadge from "./components/StatBadge";
+import { useWindowSize } from "../../../../hooks/useWindowSize";
 
 const StatsView: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -26,23 +26,23 @@ const StatsView: React.FC = () => {
         <Spacer height={windowHeight > 768 ? 60 : 20} />
         <div className={styles.BadgesContainer}>
           <StatBadge
-            icon={'star'}
+            icon={"star"}
             number={githubStars}
-            text={'Stars'}
+            text={"Stars"}
             to={`${siteConfig.customFields.githubUrl}/stargazers`}
             className={styles.Badge}
           />
           <StatBadge
-            icon={'gitMerge'}
+            icon={"gitMerge"}
             number={githubForks}
-            text={'Forks'}
+            text={"Forks"}
             to={`${siteConfig.customFields.githubUrl}/network/members`}
             className={styles.Badge}
           />
           <StatBadge
-            icon={'download'}
+            icon={"download"}
             number={npmDownloads}
-            text={'Downloads'}
+            text={"Downloads"}
             to={siteConfig.customFields.npmCoreUrl as any}
             className={styles.Badge}
           />

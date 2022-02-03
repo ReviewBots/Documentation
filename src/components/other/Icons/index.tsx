@@ -1,5 +1,5 @@
-import React from 'react';
-import { iconKeyMap } from './icons';
+import React from "react";
+import { iconKeyMap } from "./icons";
 
 type FunctionPropertyNames<T> = {
   [K in keyof T]: T[K] extends (...args: any[]) => any ? K : never;

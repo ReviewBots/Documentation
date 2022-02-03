@@ -1,9 +1,9 @@
-import clsx from 'clsx';
-import styles from './styles.module.css';
-import { FaDiscord, FaGithub } from 'react-icons/fa';
-import React from 'react';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import { onServer } from '../../../../utils';
+import clsx from "clsx";
+import styles from "./styles.module.css";
+import { FaDiscord, FaGithub } from "react-icons/fa";
+import React from "react";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import { onServer } from "../../../../utils";
 
 const QuickSocialLinksView = (props: { className?: string }): JSX.Element => {
   const { className } = props;
@@ -15,14 +15,14 @@ const QuickSocialLinksView = (props: { className?: string }): JSX.Element => {
         className={styles.Icon}
         onClick={() => {
           if (!onServer())
-            window.open(siteConfig.customFields.githubUrl, '_blank');
+            window.open(siteConfig.customFields.githubUrl, "_blank");
         }}
       />
       <FaDiscord
         className={styles.Icon}
         onClick={() => {
           if (!onServer())
-            window.open(siteConfig.customFields.discordUrl, '_blank');
+            window.open(siteConfig.customFields.discordUrl, "_blank");
         }}
       />
     </div>

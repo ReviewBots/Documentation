@@ -1,7 +1,7 @@
-import React from 'react';
-import styles from './styles.module.css';
-import clsx from 'clsx';
-import CodeBlock from '@theme/CodeBlock';
+import React from "react";
+import styles from "./styles.module.css";
+import clsx from "clsx";
+import CodeBlock from "@theme/CodeBlock";
 
 export type Props = {
   forwardRef?: React.LegacyRef<HTMLDivElement>;
@@ -19,8 +19,9 @@ const SectionLeftItem: React.FC<Props> = (props) => {
       ref={forwardRef}
       className={clsx(styles.Container, {
         [styles.Container_Active]: active,
-      })}>
-      <CodeBlock className={'javascript'}>{code}</CodeBlock>
+      })}
+    >
+      <CodeBlock className={"javascript"}>{code}</CodeBlock>
     </div>
   );
 };

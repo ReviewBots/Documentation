@@ -1,31 +1,27 @@
-import React, { useState } from 'react';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import HeaderTyper from './components/HeaderTyper';
-import Spacer from '../../../../components/other/Spacer';
-import PrimaryButton from '../../../../components/buttons/PrimaryButton';
-import GithubButton from '../../../../components/buttons/GithubButton';
-import styles from './styles.module.css';
-import { useWindowSize } from '../../../../hooks/useWindowSize';
-import MouseScroller from './components/MouseScroller';
-import Astronaut from './components/Astronaut';
-import { shuffle } from '../../../../utils';
+import React, { useState } from "react";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import HeaderTyper from "./components/HeaderTyper";
+import Spacer from "../../../../components/other/Spacer";
+import PrimaryButton from "../../../../components/buttons/PrimaryButton";
+import GithubButton from "../../../../components/buttons/GithubButton";
+import styles from "./styles.module.css";
+import { useWindowSize } from "../../../../hooks/useWindowSize";
+import MouseScroller from "./components/MouseScroller";
+import Astronaut from "./components/Astronaut";
+import { shuffle } from "../../../../utils";
 
 const HeaderView: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
   const { windowHeight } = useWindowSize();
   const [toTypeWords] = useState(
-    shuffle([
-      'simple',
-      'straightforward',
-      'understandable',
-      'fun',
-    ])
+    shuffle(["simple", "straightforward", "understandable", "fun"])
   );
 
   return (
     <div
       className={styles.Container}
-      style={{ height: windowHeight > 800 ? windowHeight : undefined }}>
+      style={{ height: windowHeight > 800 ? windowHeight : undefined }}
+    >
       <div>
         <h1 className={styles.HeaderTitle}>
           Discord Bot Reviews <span className={styles.SeparatorText}>made</span>
@@ -35,7 +31,7 @@ const HeaderView: React.FC = () => {
           className={styles.HeaderTyper}
           words={toTypeWords}
           delay={5000}
-          defaultText={toTypeWords[0] || 'simple'}
+          defaultText={toTypeWords[0] || "simple"}
         />
         <Spacer height={50} />
         <p className={styles.DescriptionText}>{siteConfig.tagline}</p>
@@ -43,7 +39,8 @@ const HeaderView: React.FC = () => {
         <div className={styles.ButtonContainer}>
           <PrimaryButton
             className={styles.GetStartedButton}
-            to={'/docs/getting-started'}>
+            to={"/docs/getting-started"}
+          >
             GET STARTED
           </PrimaryButton>
           <GithubButton

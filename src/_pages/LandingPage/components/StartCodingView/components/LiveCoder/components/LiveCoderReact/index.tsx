@@ -1,11 +1,11 @@
-import * as React from 'react';
-import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
-import styles from './styles.module.css';
-import { CodeSectionPropsInterface } from '../../index';
-import ReactLiveScope from '@theme/ReactLiveScope';
-import { useEffect, useState } from 'react';
-import { useSpring, animated } from 'react-spring';
-import { useWindowSize } from '../../../../../../../../hooks/useWindowSize';
+import * as React from "react";
+import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
+import styles from "./styles.module.css";
+import { CodeSectionPropsInterface } from "../../index";
+import ReactLiveScope from "@theme/ReactLiveScope";
+import { useEffect, useState } from "react";
+import { useSpring, animated } from "react-spring";
+import { useWindowSize } from "../../../../../../../../hooks/useWindowSize";
 
 type Props = CodeSectionPropsInterface;
 
@@ -41,24 +41,27 @@ const LiveCoderReact: React.FC<Props> = (props) => {
   return (
     <LiveProvider
       key={String(mounted)}
-      code={code.replace(/\n$/, '')}
+      code={code.replace(/\n$/, "")}
       transformCode={transformCode || ((code) => `${code};`)}
       theme={theme}
       noInline={true}
-      scope={ReactLiveScope}>
+      scope={ReactLiveScope}
+    >
       <div
         className={styles.EditorContainer}
         onMouseEnter={() => {
           if (windowWidth <= 800) setShowCodeLabel(false);
         }}
-        onMouseLeave={() => setShowCodeLabel(true)}>
+        onMouseLeave={() => setShowCodeLabel(true)}
+      >
         <LiveEditor className={styles.Editor} />
         <animated.div
           className={styles.LiveLabel}
           style={{
             ...labelShowAnimationProps,
-            ...{ display: displayCodeLabel ? 'block' : 'none' },
-          }}>
+            ...{ display: displayCodeLabel ? "block" : "none" },
+          }}
+        >
           Live
         </animated.div>
       </div>

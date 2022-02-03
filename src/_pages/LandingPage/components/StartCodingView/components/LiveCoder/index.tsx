@@ -1,13 +1,13 @@
-import * as React from 'react';
-import styles from './styles.module.css';
-import LiveCoderReact from './components/LiveCoderReact';
-import { PrismTheme } from 'prism-react-renderer';
-import { useState } from 'react';
-import LiveCodeNotFound from './components/LiveCodeNotFound';
-import { FaReact, FaVuejs } from 'react-icons/fa';
-import usePrismTheme from '@theme/hooks/usePrismTheme';
-import PlainButton from '../../../../../../components/buttons/PlainButton';
-import FrameworkButton from './components/FrameworkButton';
+import * as React from "react";
+import styles from "./styles.module.css";
+import LiveCoderReact from "./components/LiveCoderReact";
+import { PrismTheme } from "prism-react-renderer";
+import { useState } from "react";
+import LiveCodeNotFound from "./components/LiveCodeNotFound";
+import { FaReact, FaVuejs } from "react-icons/fa";
+import usePrismTheme from "@theme/hooks/usePrismTheme";
+import PlainButton from "../../../../../../components/buttons/PlainButton";
+import FrameworkButton from "./components/FrameworkButton";
 
 type Props = {
   reactCode: string;
@@ -25,14 +25,14 @@ const codeSections: { [key: string]: CodeSectionInterface } = {
       />
     ),
     logo: <FaReact />,
-    color: '#61DBFB',
+    color: "#61DBFB",
     selectable: true,
-    sandBoxUrl: 'https://codesandbox.io/s/agilets-first-state-f12cz',
+    sandBoxUrl: "https://codesandbox.io/s/agilets-first-state-f12cz",
   },
   vue: {
     codeComponent: (props) => <div />,
     logo: <FaVuejs />,
-    color: '#42b883',
+    color: "#42b883",
     selectable: false,
   },
 };
@@ -41,7 +41,7 @@ const LiveCoder: React.FC<Props> = (props) => {
   const { reactCode, transformCode } = props;
   const theme = props.theme || usePrismTheme();
 
-  const [codeSectionKey, setCodeSectionKey] = useState('react');
+  const [codeSectionKey, setCodeSectionKey] = useState("react");
   const CurrentCodeComponent = codeSections[codeSectionKey]?.codeComponent;
 
   return (
@@ -55,7 +55,7 @@ const LiveCoder: React.FC<Props> = (props) => {
               color={codeSections[key]?.color}
               selectable={codeSections[key]?.selectable}
               active={key === codeSectionKey}
-              notSelectableToolTip={'Coming Soon'}
+              notSelectableToolTip={"Coming Soon"}
               onClick={() => {
                 setCodeSectionKey(key);
               }}
@@ -76,7 +76,7 @@ const LiveCoder: React.FC<Props> = (props) => {
         {codeSections[codeSectionKey]?.sandBoxUrl && (
           <PlainButton
             to={codeSections[codeSectionKey]?.sandBoxUrl}
-            name={'Sandbox'}
+            name={"Sandbox"}
             className={styles.SandboxButton}
           />
         )}

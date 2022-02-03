@@ -1,12 +1,12 @@
-import { AutoTyper } from '../index';
-import { Event } from './Event';
+import { AutoTyper } from "../index";
+import { Event } from "./Event";
 
 export class RemoveEvent extends Event {
   public config: RemoveEventConfigInterface;
   public all: boolean;
 
   constructor(autoTyper: AutoTyper, config: RemoveEventConfigInterface = {}) {
-    super(autoTyper, true, 'remove');
+    super(autoTyper, true, "remove");
     config = {
       timeBetweenLetter: autoTyper.config.delay,
       ...config,

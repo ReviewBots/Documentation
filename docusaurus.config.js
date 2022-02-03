@@ -4,7 +4,7 @@ const {
   createState,
   createCollection,
   createComputed,
-} = require('@agile-ts/core');
+} = require("@agile-ts/core");
 const {
   AgileHOC,
   useAgile,
@@ -12,27 +12,23 @@ const {
   useProxy,
   useSelector,
   useValue,
-} = require('@agile-ts/react');
-const { Event, useEvent } = require('@agile-ts/event');
-const { toast } = require('react-toastify');
+} = require("@agile-ts/react");
+const { Event, useEvent } = require("@agile-ts/event");
+const { toast } = require("react-toastify");
 
-const githubOrgUrl = 'https://github.com/ReviewBots';
-const domain = 'https://docs.reviewbots.xyz';
-const npmOrgUrl = 'https://www.npmjs.com/package/reviewbots.js';
+const githubOrgUrl = "https://github.com/ReviewBots";
+const domain = "https://docs.reviewbots.xyz";
+const npmOrgUrl = "https://www.npmjs.com/package/reviewbots.js";
 
 const customFields = {
   copyright: `Copyright © 2020-${new Date().getFullYear()} <a target="_blank" rel="noopener noreferrer" href="https://reviewbots.xyz">Review Bots</a>`,
   meta: {
-    title: 'Review Bots Docs',
-    image: 'https://reviewbots.xyz/static/assets/imgs/rb_new.png',
+    title: "Review Bots Docs",
+    image: "https://reviewbots.xyz/static/assets/imgs/rb_new.png",
     description:
-      'The Number One Discord Bot Review Service, Experiencing Issues with your Favourite Bots? Search our vast list of bots and Let the Dev Team know!' ,
-    color: '#6c69a0',
-    keywords: [
-      'Discord',
-      'Bot',
-      'Reviews'
-    ],
+      "The Number One Discord Bot Review Service, Experiencing Issues with your Favourite Bots? Search our vast list of bots and Let the Dev Team know!",
+    color: "#6c69a0",
+    keywords: ["Discord", "Bot", "Reviews"],
   },
   domain,
   githubOrgUrl,
@@ -40,10 +36,10 @@ const customFields = {
   githubDocsUrl: `${githubOrgUrl}/ReviewBots-Docs`,
   npmCoreUrl: `${npmOrgUrl}`,
   discordUrl: `https://reviewbots.xyz/discord`,
-  twitterUrl: 'https://twitter.com/ReviewBots',
-  version: '0.0.1',
+  twitterUrl: "https://twitter.com/ReviewBots",
+  version: "0.0.1",
   announcementBar: {
-    id: 'announcement',
+    id: "announcement",
     content: [
       `❓ If you have any questions, don't hesitate to join our <a target="_blank" rel="noopener noreferrer" href="https://reviewbots.xyz/discord">Discord</a> ️`,
       `🎉 If you like Review Bots, give us a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/ReviewBots/ReviewBots.js">GitHub</a>`,
@@ -71,39 +67,39 @@ const customFields = {
 };
 
 const config = {
-  title: 'Review Bots Docs',
-  tagline: 'The Number One Discord Bot Review Service, Experiencing Issues with your Favourite Bots? Search our vast list of bots and Let the Dev Team know!',
+  title: "Review Bots Docs",
+  tagline:
+    "The Number One Discord Bot Review Service, Experiencing Issues with your Favourite Bots? Search our vast list of bots and Let the Dev Team know!",
   url: customFields.domain,
   baseUrlIssueBanner: false,
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  favicon: 'https://reviewbots.xyz/static/assets/imgs/rb_new.png',
-  organizationName: 'ReviewBots',
-  projectName: 'https://github.com/ReviewBots/ReviewBots-Docs',
-  themes: ['@docusaurus/theme-live-codeblock'],
-  scripts: [{ src: 'https://snack.expo.io/embed.js', async: true }], // https://github.com/expo/snack/blob/main/docs/embedding-snacks.md
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  favicon: "https://reviewbots.xyz/static/assets/imgs/rb_new.png",
+  organizationName: "ReviewBots",
+  projectName: "https://github.com/ReviewBots/ReviewBots-Docs",
+  themes: ["@docusaurus/theme-live-codeblock"],
+  scripts: [{ src: "https://snack.expo.io/embed.js", async: true }], // https://github.com/expo/snack/blob/main/docs/embedding-snacks.md
   plugins: [
-    'docusaurus-plugin-sass',
+    "docusaurus-plugin-sass",
     // @docusaurus/plugin-google-analytics (Not necessary because it automatically gets added)
   ],
   customFields: { ...customFields },
   themeConfig: {
     hideableSidebar: true,
     colorMode: {
-      defaultMode: 'dark',
+      defaultMode: "dark",
       disableSwitch: false,
       respectPrefersColorScheme: false,
     },
     prism: {
-      theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('prism-react-renderer/themes/dracula'),
+      theme: require("prism-react-renderer/themes/github"),
+      darkTheme: require("prism-react-renderer/themes/dracula"),
     },
     navbar: {
       title: "",
       logo: {
         alt: "RB Logo",
-        src:
-          "https://reviewbots.xyz/static/assets/imgs/rb_new.png"
+        src: "https://reviewbots.xyz/static/assets/imgs/rb_new.png",
       },
       items: [
         {
@@ -111,20 +107,20 @@ const config = {
           position: "left",
           items: [
             {
-              label: 'Getting Started',
-              to: '/docs/getting-started/',
+              label: "Getting Started",
+              to: "/docs/getting-started/",
             },
             {
-              label: 'Introduction',
-              to: '/docs/api_docs/intro/',
+              label: "Introduction",
+              to: "/docs/api_docs/intro/",
             },
             {
-              label: 'References',
-              to: '/docs/api_docs/references/',
+              label: "References",
+              to: "/docs/api_docs/references/",
             },
             {
-              label: 'Usage',
-              to: '/docs/api_docs/usage/',
+              label: "Usage",
+              to: "/docs/api_docs/usage/",
             },
           ],
         },
@@ -133,12 +129,12 @@ const config = {
           position: "left",
           items: [
             {
-              label: 'getBotReviews()',
-              to: '/docs/api_classes/get/',
+              label: "getBotReviews()",
+              to: "/docs/api_classes/get/",
             },
             {
-              label: 'viewReview()',
-              to: '/docs/api_classes/view/',
+              label: "viewReview()",
+              to: "/docs/api_classes/view/",
             },
           ],
         },
@@ -147,48 +143,48 @@ const config = {
           position: "left",
           items: [
             {
-              label: 'Introduction',
-              to: '/docs/npm_docs/intro/',
+              label: "Introduction",
+              to: "/docs/npm_docs/intro/",
             },
             {
-              label: 'ReviewBots.js',
-              to: '/docs/npm_docs/rbmodule/',
+              label: "ReviewBots.js",
+              to: "/docs/npm_docs/rbmodule/",
             },
           ],
         },
-        { 
-          to: "blog", 
-          label: "Blog", 
-          position: "right" 
-        }
-      ]
+        {
+          to: "blog",
+          label: "Blog",
+          position: "right",
+        },
+      ],
     },
     footer: {
       copyright: customFields.copyright,
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'Get Started',
-              to: 'docs/getting-started',
-            }
+              label: "Get Started",
+              to: "docs/getting-started",
+            },
           ],
         },
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: 'GitHub',
+              label: "GitHub",
               href: customFields.githubUrl,
             },
             {
-              label: 'Discord',
+              label: "Discord",
               href: customFields.discordUrl,
             },
             {
-              label: 'Twitter',
+              label: "Twitter",
               href: customFields.twitterUrl,
             },
           ],
@@ -196,25 +192,25 @@ const config = {
       ],
     },
     googleAnalytics: {
-      trackingID: 'UA-189394644-1',
+      trackingID: "UA-189394644-1",
       anonymizeIP: true, // Should IPs be anonymized?
     },
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          path: 'docs',
+          path: "docs",
           sidebarPath: require.resolve("./sidebars.js"),
           admonitions: {
-            icons: 'emoji',
+            icons: "emoji",
           },
           editUrl: `${customFields.githubDocsUrl}`,
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
           remarkPlugins: [
-            [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
+            [require("@docusaurus/remark-plugin-npm2yarn"), { sync: true }],
           ],
         },
         blog: {
@@ -222,7 +218,7 @@ const config = {
           editUrl: `${customFields.githubDocsUrl}/tree/develop`,
         },
         theme: {
-          customCss: [require.resolve('./src/css/custom.scss')],
+          customCss: [require.resolve("./src/css/custom.scss")],
         },
       },
     ],

@@ -1,4 +1,4 @@
-import API from '@agile-ts/api';
+import API from "@agile-ts/api";
 
 const api = new API({
   timeout: 10000,

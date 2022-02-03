@@ -1,6 +1,6 @@
-import ui from './entities/ui';
-import stats from './entities/stats';
-import { globalBind } from '@agile-ts/core';
+import ui from "./entities/ui";
+import stats from "./entities/stats";
+import { globalBind } from "@agile-ts/core";
 
 const core = {
   ui: ui,
@@ -8,6 +8,6 @@ const core = {
 };
 
 // For better debugging
-globalBind('__core__', core);
+globalBind("__core__", core);
 
 export default core;

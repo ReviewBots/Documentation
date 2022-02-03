@@ -1,10 +1,10 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
-import styles from './styles.module.css';
-import { useWindowSize } from '../../../../../../hooks/useWindowSize';
-import SectionRightItem from './components/SectionRightItem';
-import SectionLeftItem from './components/SectionLeftItem';
-import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
-import { IconTypes } from '../../../../../../components/other/Icons';
+import React, { useCallback, useEffect, useRef, useState } from "react";
+import styles from "./styles.module.css";
+import { useWindowSize } from "../../../../../../hooks/useWindowSize";
+import SectionRightItem from "./components/SectionRightItem";
+import SectionLeftItem from "./components/SectionLeftItem";
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
+import { IconTypes } from "../../../../../../components/other/Icons";
 
 export interface SectionInterface {
   codeWithComment?: string;
@@ -70,11 +70,12 @@ const SectionScroller: React.FC<Props> = (props) => {
       <div
         className={styles.ChevronContainer}
         style={{
-          visibility: showTopChevron ? 'visible' : 'hidden',
+          visibility: showTopChevron ? "visible" : "hidden",
         }}
         onClick={() => {
           handleChevronClick(true);
-        }}>
+        }}
+      >
         <FiChevronUp />
       </div>
       <div className={styles.SectionInnerContainer}>
@@ -117,11 +118,12 @@ const SectionScroller: React.FC<Props> = (props) => {
       <div
         className={styles.ChevronContainer}
         style={{
-          visibility: showBottomChevron ? 'visible' : 'hidden',
+          visibility: showBottomChevron ? "visible" : "hidden",
         }}
         onClick={() => {
           handleChevronClick(false);
-        }}>
+        }}
+      >
         <FiChevronDown />
       </div>
     </div>

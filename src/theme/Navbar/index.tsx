@@ -6,25 +6,25 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import React, { useCallback, useState } from 'react';
-import clsx from 'clsx';
-import Toggle from '@theme/Toggle';
-import useThemeContext from '@theme/hooks/useThemeContext';
-import NavbarItem from '@theme/NavbarItem';
-import Logo from '@theme/Logo';
-import styles from './styles.module.css';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import IconMenu from '@theme/IconMenu';
-import { useHistory } from 'react-router-dom';
+import React, { useCallback, useState } from "react";
+import clsx from "clsx";
+import Toggle from "@theme/Toggle";
+import useThemeContext from "@theme/hooks/useThemeContext";
+import NavbarItem from "@theme/NavbarItem";
+import Logo from "@theme/Logo";
+import styles from "./styles.module.css";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import IconMenu from "@theme/IconMenu";
+import { useHistory } from "react-router-dom";
 import {
   splitNavItemsByPosition,
   useMobileSidebar,
   useNavbarItems,
-} from './controller';
-import QuickSocialLinksView from './components/QuickSocialLinksView';
-import BrowserOnly from '@docusaurus/BrowserOnly';
-import Progressbar from './components/Progressbar';
-import NavbarMobileSidebar from './components/NavbarMobileSidebar';
+} from "./controller";
+import QuickSocialLinksView from "./components/QuickSocialLinksView";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+import Progressbar from "./components/Progressbar";
+import NavbarMobileSidebar from "./components/NavbarMobileSidebar";
 
 const Navbar: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -47,11 +47,12 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={clsx('navbar', 'navbar--fixed-top', {
-        'navbar-sidebar--show': mobileSidebar.shown,
-      })}>
+      className={clsx("navbar", "navbar--fixed-top", {
+        "navbar-sidebar--show": mobileSidebar.shown,
+      })}
+    >
       {/* Navbar */}
-      <div className={clsx('navbar__inner', styles.InnerContainer)}>
+      <div className={clsx("navbar__inner", styles.InnerContainer)}>
         <div className="navbar__items">
           <Logo
             className="navbar__brand"
@@ -59,8 +60,9 @@ const Navbar: React.FC = () => {
             titleClassName="navbar__title"
           />
           <a
-            className={clsx('navbar__brand', styles.BrandText)}
-            onClick={() => history.push('/')}>
+            className={clsx("navbar__brand", styles.BrandText)}
+            onClick={() => history.push("/")}
+          >
             {siteConfig.title}
           </a>
           {leftItems.map((item, i) => (
@@ -89,7 +91,8 @@ const Navbar: React.FC = () => {
           role="button"
           tabIndex={0}
           onClick={mobileSidebar.toggle}
-          onKeyDown={mobileSidebar.toggle}>
+          onKeyDown={mobileSidebar.toggle}
+        >
           <IconMenu />
         </div>
       )}

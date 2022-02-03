@@ -1,11 +1,11 @@
-import { animated, useSpring } from 'react-spring';
-import React, { useState } from 'react';
-import { useAgile } from '@agile-ts/react';
-import core from '../../../../../../core';
-import styles from './styles.module.css';
-import clsx from 'clsx';
-import AstronautDark from './astronauts/AstronautDark';
-import AstronautLight from './astronauts/AstronautLight';
+import { animated, useSpring } from "react-spring";
+import React, { useState } from "react";
+import { useAgile } from "@agile-ts/react";
+import core from "../../../../../../core";
+import styles from "./styles.module.css";
+import clsx from "clsx";
+import AstronautDark from "./astronauts/AstronautDark";
+import AstronautLight from "./astronauts/AstronautLight";
 
 type Props = { className?: string };
 
@@ -57,7 +57,8 @@ const Astronaut: React.FC<Props> = (props) => {
             ],
           }),
         }}
-        className={styles.ImageContainer}>
+        className={styles.ImageContainer}
+      >
         {dark ? (
           <AstronautDark onMouseEnter={onMouseEnter} />
         ) : (

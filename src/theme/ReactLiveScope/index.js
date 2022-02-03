@@ -7,8 +7,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import docusaurusConfig from '../../../docusaurus.config';
-import React from 'react';
+import docusaurusConfig from "../../../docusaurus.config";
+import React from "react";
 
 // Add react-live imports you need here
 const ReactLiveScope = {

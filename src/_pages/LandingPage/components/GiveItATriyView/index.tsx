@@ -1,7 +1,7 @@
-import React from 'react';
-import styles from './styles.module.css';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Spacer from '../../../../components/other/Spacer';
+import React from "react";
+import styles from "./styles.module.css";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Spacer from "../../../../components/other/Spacer";
 
 const GiveItATryView: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -12,11 +12,12 @@ const GiveItATryView: React.FC = () => {
       <Spacer height={40} />
       <div className={styles.Terminal}>
         <code>
-          npm install{' '}
+          npm install{" "}
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href={siteConfig.customFields.npmCoreUrl as any}>
+            href={siteConfig.customFields.npmCoreUrl as any}
+          >
             @agile-ts/core
           </a>
         </code>

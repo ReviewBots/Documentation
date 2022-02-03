@@ -1,5 +1,5 @@
-import { inDevelopment } from '../utils';
-import { assignSharedLogger, createLogger, Logger } from '@agile-ts/logger';
+import { inDevelopment } from "../utils";
+import { assignSharedLogger, createLogger, Logger } from "@agile-ts/logger";
 
 assignSharedLogger(
   createLogger({

@@ -1,4 +1,4 @@
-import { onServer } from '../utils';
+import { onServer } from "../utils";
 
 export function useScroll(scrollbarId: string): void {
   if (!onServer()) {
@@ -9,7 +9,7 @@ export function useScroll(scrollbarId: string): void {
         document.documentElement.scrollHeight -
         document.documentElement.clientHeight;
       const scrolled = (winScroll / height) * 100;
-      document.getElementById(scrollbarId).style.width = scrolled + '%';
+      document.getElementById(scrollbarId).style.width = scrolled + "%";
     };
   }
 }

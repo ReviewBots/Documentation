@@ -1,9 +1,9 @@
-import React from 'react';
-import { FiChevronRight } from 'react-icons/fi';
-import { useHistory } from 'react-router-dom';
-import styles from './styles.module.css';
-import clsx from 'clsx';
-import { onServer } from '../../../utils';
+import React from "react";
+import { FiChevronRight } from "react-icons/fi";
+import { useHistory } from "react-router-dom";
+import styles from "./styles.module.css";
+import clsx from "clsx";
+import { onServer } from "../../../utils";
 
 export type Props = { to: string; className?: string; name: string };
 
@@ -15,12 +15,13 @@ const PlainButton: React.FC<Props> = (props) => {
     <button
       className={clsx(styles.ButtonContainer, className)}
       onClick={() => {
-        if (to.startsWith('http') && !onServer()) {
-          window.open(to, '_blank');
+        if (to.startsWith("http") && !onServer()) {
+          window.open(to, "_blank");
           return;
         }
         history.push(to);
-      }}>
+      }}
+    >
       <div>{name}</div>
       <FiChevronRight size={16} className={styles.Chevron} />
     </button>
